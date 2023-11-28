@@ -34,6 +34,7 @@ public class foMenu extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         jTextField1.setText("jTextField1");
 
@@ -42,51 +43,34 @@ public class foMenu extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel23.setFont(new java.awt.Font("Papyrus", 1, 36)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
         jLabel23.setText("Halálabirintus");
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 17, -1, -1));
 
+        jButton1.setBackground(new java.awt.Color(153, 153, 0));
         jButton1.setText("Új játék");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 80, 143, -1));
 
+        jButton2.setBackground(new java.awt.Color(255, 51, 0));
         jButton2.setText("Kilépés");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 115, 143, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel23))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE))))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jLabel23)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hatter.jpg")); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 150));
 
         pack();
         setLocationRelativeTo(null);
@@ -143,6 +127,7 @@ public class foMenu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables

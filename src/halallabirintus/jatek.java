@@ -15,7 +15,7 @@ public class jatek extends javax.swing.JFrame {
      */
     public jatek() {
         initComponents();
-        jTextArea1.setText("Miután öt percet haladtál lassan az alagútban, egy kőasztalhoz érsz, amely a bal oldali fal mellett áll. Hat doboz van rajta, egyikükre a te neved festették. Ha kiakarod nyitni a dobozt, lapozz a 270-re. Ha inkább tovább haladsz észak felé, lapozz a 66-ra.");
+        txfSz.setText("Miután öt percet haladtál lassan az alagútban, egy kőasztalhoz érsz, amely a bal oldali fal mellett áll. Hat doboz van rajta, egyikükre a te neved festették. Ha kiakarod nyitni a dobozt, kattints a 'Nyisd ki a doboz' gombra. Ha inkább tovább haladsz észak felé, kattints az 'Észak felé' gombra!");
     }
 
     /**
@@ -28,7 +28,7 @@ public class jatek extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txfSz = new javax.swing.JTextArea();
         lblEletero = new javax.swing.JLabel();
         lblSzerencse = new javax.swing.JLabel();
         lblUgyesseg = new javax.swing.JLabel();
@@ -75,290 +75,191 @@ public class jatek extends javax.swing.JFrame {
         lblUgy20 = new javax.swing.JLabel();
         btnBal = new javax.swing.JButton();
         btnJobb = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFocusableWindowState(false);
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txfSz.setColumns(20);
+        txfSz.setLineWrap(true);
+        txfSz.setRows(5);
+        txfSz.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(txfSz);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 138, 273, 150));
 
         lblEletero.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblEletero.setForeground(new java.awt.Color(255, 255, 255));
         lblEletero.setText("Életerő");
+        getContentPane().add(lblEletero, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
 
         lblSzerencse.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblSzerencse.setForeground(new java.awt.Color(255, 255, 255));
         lblSzerencse.setText("Szerencse");
+        getContentPane().add(lblSzerencse, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 39, -1, 27));
 
         lblUgyesseg.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblUgyesseg.setForeground(new java.awt.Color(255, 255, 255));
         lblUgyesseg.setText("Ügyesség");
+        getContentPane().add(lblUgyesseg, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 72, -1, -1));
 
         lblArany.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblArany.setForeground(new java.awt.Color(255, 255, 255));
         lblArany.setText("Arany");
+        getContentPane().add(lblArany, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 107, -1, -1));
 
         lblLc1.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
+        getContentPane().add(lblLc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 39, -1, -1));
 
         lblLc2.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
+        getContentPane().add(lblLc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 39, -1, -1));
 
         lblLc3.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
+        getContentPane().add(lblLc3, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 39, -1, -1));
 
         lblLc4.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
+        getContentPane().add(lblLc4, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 39, -1, -1));
 
         lblLc5.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
+        getContentPane().add(lblLc5, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 39, -1, -1));
 
         lblLc6.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
+        getContentPane().add(lblLc6, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 39, -1, -1));
 
         lblLc7.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
+        getContentPane().add(lblLc7, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 39, -1, -1));
 
         lblLc8.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
+        getContentPane().add(lblLc8, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 39, -1, -1));
 
         lblLc9.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
+        getContentPane().add(lblLc9, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 39, -1, -1));
 
         lblLc10.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
+        getContentPane().add(lblLc10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 39, -1, -1));
 
         lblHp1.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
+        getContentPane().add(lblHp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 6, -1, -1));
 
         lblHp2.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
+        getContentPane().add(lblHp2, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 6, -1, -1));
 
         lblHp3.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
+        getContentPane().add(lblHp3, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 6, -1, -1));
 
         lblHp4.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
+        getContentPane().add(lblHp4, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 6, -1, -1));
 
         lblHp5.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
+        getContentPane().add(lblHp5, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 6, -1, -1));
 
         lblHp6.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
+        getContentPane().add(lblHp6, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 6, -1, -1));
 
         lblHp7.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
+        getContentPane().add(lblHp7, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 6, -1, -1));
 
         lblHp8.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
+        getContentPane().add(lblHp8, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 6, -1, -1));
 
         lblHp9.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
+        getContentPane().add(lblHp9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 6, -1, -1));
 
         lblHp10.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
+        getContentPane().add(lblHp10, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 6, -1, -1));
 
         lblUgy1.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy1, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 72, -1, -1));
 
         lblUgy2.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy2, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 72, -1, -1));
 
         lblUgy3.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy3, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 72, -1, -1));
 
         lblUgy4.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy4, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 72, -1, -1));
 
         lblUgy5.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy5, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 72, -1, -1));
 
         lblUgy6.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy6, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 72, -1, -1));
 
         lblUgy7.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy7, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 72, -1, -1));
 
         lblUgy8.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy8, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 72, -1, -1));
 
         lblUgy9.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy9, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 72, -1, -1));
 
         lblUgy10.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 72, -1, -1));
 
         lblUgy11.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
+        getContentPane().add(lblUgy11, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 105, -1, -1));
 
         lblUgy12.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
+        getContentPane().add(lblUgy12, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 105, -1, -1));
 
         lblUgy13.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
+        getContentPane().add(lblUgy13, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 105, -1, -1));
 
         lblUgy14.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
+        getContentPane().add(lblUgy14, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 105, -1, -1));
 
         lblUgy15.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
+        getContentPane().add(lblUgy15, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 105, -1, -1));
 
         lblUgy16.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
+        getContentPane().add(lblUgy16, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 105, -1, -1));
 
         lblUgy17.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
+        getContentPane().add(lblUgy17, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 105, -1, -1));
 
         lblUgy18.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
+        getContentPane().add(lblUgy18, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 105, -1, -1));
 
         lblUgy19.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
+        getContentPane().add(lblUgy19, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 105, -1, -1));
 
         lblUgy20.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
+        getContentPane().add(lblUgy20, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 105, -1, -1));
 
-        btnBal.setText("jButton1");
+        btnBal.setText("Nyisd ki a dobozt");
+        getContentPane().add(btnBal, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 306, -1, -1));
 
-        btnJobb.setText("jButton2");
+        btnJobb.setText("Észak felé");
+        btnJobb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJobbActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnJobb, new org.netbeans.lib.awtextra.AbsoluteConstraints(199, 306, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblSzerencse)
-                            .addComponent(lblEletero))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblHp10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblHp1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblHp2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblHp3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblHp4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblHp5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblHp6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblHp7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblHp8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblHp9))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblLc1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblLc2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblLc3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblLc4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblLc5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblLc6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblLc7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblLc8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblLc9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblLc10)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblUgyesseg)
-                            .addComponent(lblArany))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblUgy11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy17)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy19)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblUgy20))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblUgy1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lblUgy10)
-                                .addGap(0, 0, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnBal)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnJobb)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblEletero)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(lblHp10)
-                                .addComponent(lblHp1)
-                                .addComponent(lblHp2)
-                                .addComponent(lblHp3)
-                                .addComponent(lblHp4)
-                                .addComponent(lblHp5)
-                                .addComponent(lblHp6)
-                                .addComponent(lblHp7)
-                                .addComponent(lblHp8)
-                                .addComponent(lblHp9)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(lblLc1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLc2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLc3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLc4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLc5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLc6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLc7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLc8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLc9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblLc10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblSzerencse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblUgyesseg, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lblUgy2, javax.swing.GroupLayout.Alignment.TRAILING))
-                            .addComponent(lblUgy3)
-                            .addComponent(lblUgy4)
-                            .addComponent(lblUgy5)
-                            .addComponent(lblUgy6)
-                            .addComponent(lblUgy7)
-                            .addComponent(lblUgy8)
-                            .addComponent(lblUgy9)
-                            .addComponent(lblUgy10)))
-                    .addComponent(lblUgy1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblArany)
-                    .addComponent(lblUgy11)
-                    .addComponent(lblUgy12)
-                    .addComponent(lblUgy13)
-                    .addComponent(lblUgy14)
-                    .addComponent(lblUgy15)
-                    .addComponent(lblUgy16)
-                    .addComponent(lblUgy17)
-                    .addComponent(lblUgy18)
-                    .addComponent(lblUgy19)
-                    .addComponent(lblUgy20))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBal)
-                    .addComponent(btnJobb))
-                .addGap(15, 15, 15))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hatter3.jpg")); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 350));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnJobbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJobbActionPerformed
+        eszakFele();
+    }//GEN-LAST:event_btnJobbActionPerformed
+
+    private void eszakFele() {
+        if (btnJobb.getText() == "Észak felé"){
+            txfSz.setText("Néhány perc gyaloglás után egy elágazáshoz érsz az alagútban. Egy, a falra festett fehér nyíl nyugatfelé mutat. A földön nedves lábnyomok jelzik, merre haladtak az előtted járók. Nehéz biztosan megmondani, de úgy tűnik, hogy három közülük a nyíl irányába halad, míg egyikük úgy döntött, hogy keletnek megy. Ha nyugat felé kívánsz menni, lapozz a 293-ra. Ha keletnek, lapozz a 56-re.");
+            btnJobb.setText("Nyugat");
+            btnBal.setText("Kelet");
+        }
+    }
 
     /**
      * @param args the command line arguments
@@ -398,8 +299,8 @@ public class jatek extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBal;
     private javax.swing.JButton btnJobb;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel lblArany;
     private javax.swing.JLabel lblEletero;
     private javax.swing.JLabel lblHp1;
@@ -444,5 +345,6 @@ public class jatek extends javax.swing.JFrame {
     private javax.swing.JLabel lblUgy8;
     private javax.swing.JLabel lblUgy9;
     private javax.swing.JLabel lblUgyesseg;
+    private javax.swing.JTextArea txfSz;
     // End of variables declaration//GEN-END:variables
 }
