@@ -231,6 +231,11 @@ public class jatek extends javax.swing.JFrame {
         getContentPane().add(lblUgy20, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 105, -1, -1));
 
         btnBal.setText("Nyisd ki a dobozt");
+        btnBal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBalActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnBal, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 306, -1, -1));
 
         btnJobb.setText("Észak felé");
@@ -250,8 +255,21 @@ public class jatek extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnJobbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJobbActionPerformed
+        
         eszakFele();
     }//GEN-LAST:event_btnJobbActionPerformed
+
+    private void btnBalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBalActionPerformed
+        nyisdKiADobozt();
+    }//GEN-LAST:event_btnBalActionPerformed
+
+    private void nyisdKiADobozt() {
+        if (btnBal.getText() == "Nyisd ki a dobozt") {
+            txfSz.setText("A doboz teteje könnyedén nyílik. Benne két aranypénzt találsz, és egy üzenetet, amely egy kis pergamenen neked szól. Előbb zsebre vágod az aranyakat, aztán elolvasod az üzenetet: - „Jól tetted. Legalább volt annyi eszed, hogy megállj és elfogadd az ajándékot. Most azt tanácsolom neked, hogy keress és használj különféle tárgyakat, ha sikerrel akarsz áthaladni Halállabirintusomon.” Azaláírás Szukumvit. Megjegyzed a tanácsot, apró darabokra téped a pergament, és tovább mész észak felé.");
+            btnBal.setText("Észak felé");
+            btnJobb.setText("");
+        }
+    }
 
     private void eszakFele() {
         if (btnJobb.getText() == "Észak felé"){
