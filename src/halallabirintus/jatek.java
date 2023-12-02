@@ -34,16 +34,9 @@ public class jatek extends javax.swing.JFrame {
         lblUgyesseg = new javax.swing.JLabel();
         lblArany = new javax.swing.JLabel();
         lblLc1 = new javax.swing.JLabel();
-        lblLc2 = new javax.swing.JLabel();
-        lblLc3 = new javax.swing.JLabel();
-        lblLc4 = new javax.swing.JLabel();
-        lblLc5 = new javax.swing.JLabel();
-        lblLc6 = new javax.swing.JLabel();
-        lblLc7 = new javax.swing.JLabel();
-        lblLc8 = new javax.swing.JLabel();
-        lblLc9 = new javax.swing.JLabel();
-        lblLc10 = new javax.swing.JLabel();
         lblHp1 = new javax.swing.JLabel();
+        btnBal = new javax.swing.JButton();
+        btnJobb = new javax.swing.JButton();
         lblHp2 = new javax.swing.JLabel();
         lblHp3 = new javax.swing.JLabel();
         lblHp4 = new javax.swing.JLabel();
@@ -51,8 +44,13 @@ public class jatek extends javax.swing.JFrame {
         lblHp6 = new javax.swing.JLabel();
         lblHp7 = new javax.swing.JLabel();
         lblHp8 = new javax.swing.JLabel();
-        lblHp9 = new javax.swing.JLabel();
-        lblHp10 = new javax.swing.JLabel();
+        lblLc2 = new javax.swing.JLabel();
+        lblLc3 = new javax.swing.JLabel();
+        lblLc4 = new javax.swing.JLabel();
+        lblLc5 = new javax.swing.JLabel();
+        lblLc6 = new javax.swing.JLabel();
+        lblLc7 = new javax.swing.JLabel();
+        lblLc8 = new javax.swing.JLabel();
         lblUgy1 = new javax.swing.JLabel();
         lblUgy2 = new javax.swing.JLabel();
         lblUgy3 = new javax.swing.JLabel();
@@ -61,20 +59,14 @@ public class jatek extends javax.swing.JFrame {
         lblUgy6 = new javax.swing.JLabel();
         lblUgy7 = new javax.swing.JLabel();
         lblUgy8 = new javax.swing.JLabel();
-        lblUgy9 = new javax.swing.JLabel();
-        lblUgy10 = new javax.swing.JLabel();
-        lblUgy11 = new javax.swing.JLabel();
-        lblUgy12 = new javax.swing.JLabel();
-        lblUgy13 = new javax.swing.JLabel();
-        lblUgy14 = new javax.swing.JLabel();
-        lblUgy15 = new javax.swing.JLabel();
-        lblUgy16 = new javax.swing.JLabel();
-        lblUgy17 = new javax.swing.JLabel();
-        lblUgy18 = new javax.swing.JLabel();
-        lblUgy19 = new javax.swing.JLabel();
-        lblUgy20 = new javax.swing.JLabel();
-        btnBal = new javax.swing.JButton();
-        btnJobb = new javax.swing.JButton();
+        lblArany1 = new javax.swing.JLabel();
+        lblArany2 = new javax.swing.JLabel();
+        lblArany3 = new javax.swing.JLabel();
+        lblArany4 = new javax.swing.JLabel();
+        lblArany5 = new javax.swing.JLabel();
+        lblArany6 = new javax.swing.JLabel();
+        lblArany7 = new javax.swing.JLabel();
+        lblArany8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -93,142 +85,28 @@ public class jatek extends javax.swing.JFrame {
         lblEletero.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblEletero.setForeground(new java.awt.Color(255, 255, 255));
         lblEletero.setText("Életerő");
-        getContentPane().add(lblEletero, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
+        getContentPane().add(lblEletero, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
         lblSzerencse.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblSzerencse.setForeground(new java.awt.Color(255, 255, 255));
         lblSzerencse.setText("Szerencse");
-        getContentPane().add(lblSzerencse, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 39, -1, 27));
+        getContentPane().add(lblSzerencse, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, 27));
 
         lblUgyesseg.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblUgyesseg.setForeground(new java.awt.Color(255, 255, 255));
         lblUgyesseg.setText("Ügyesség");
-        getContentPane().add(lblUgyesseg, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 72, -1, -1));
+        getContentPane().add(lblUgyesseg, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
         lblArany.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblArany.setForeground(new java.awt.Color(255, 255, 255));
         lblArany.setText("Arany");
-        getContentPane().add(lblArany, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 107, -1, -1));
+        getContentPane().add(lblArany, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
 
-        lblLc1.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
-        getContentPane().add(lblLc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 39, -1, -1));
+        lblLc1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/szerencse.png"))); // NOI18N
+        getContentPane().add(lblLc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, -1, -1));
 
-        lblLc2.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
-        getContentPane().add(lblLc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 39, -1, -1));
-
-        lblLc3.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
-        getContentPane().add(lblLc3, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 39, -1, -1));
-
-        lblLc4.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
-        getContentPane().add(lblLc4, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 39, -1, -1));
-
-        lblLc5.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
-        getContentPane().add(lblLc5, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 39, -1, -1));
-
-        lblLc6.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
-        getContentPane().add(lblLc6, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 39, -1, -1));
-
-        lblLc7.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
-        getContentPane().add(lblLc7, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 39, -1, -1));
-
-        lblLc8.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
-        getContentPane().add(lblLc8, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 39, -1, -1));
-
-        lblLc9.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
-        getContentPane().add(lblLc9, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 39, -1, -1));
-
-        lblLc10.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\szerencse.png")); // NOI18N
-        getContentPane().add(lblLc10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 39, -1, -1));
-
-        lblHp1.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
-        getContentPane().add(lblHp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 6, -1, -1));
-
-        lblHp2.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
-        getContentPane().add(lblHp2, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 6, -1, -1));
-
-        lblHp3.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
-        getContentPane().add(lblHp3, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 6, -1, -1));
-
-        lblHp4.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
-        getContentPane().add(lblHp4, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 6, -1, -1));
-
-        lblHp5.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
-        getContentPane().add(lblHp5, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 6, -1, -1));
-
-        lblHp6.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
-        getContentPane().add(lblHp6, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 6, -1, -1));
-
-        lblHp7.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
-        getContentPane().add(lblHp7, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 6, -1, -1));
-
-        lblHp8.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
-        getContentPane().add(lblHp8, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 6, -1, -1));
-
-        lblHp9.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
-        getContentPane().add(lblHp9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 6, -1, -1));
-
-        lblHp10.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hp.png")); // NOI18N
-        getContentPane().add(lblHp10, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 6, -1, -1));
-
-        lblUgy1.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
-        getContentPane().add(lblUgy1, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 72, -1, -1));
-
-        lblUgy2.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
-        getContentPane().add(lblUgy2, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 72, -1, -1));
-
-        lblUgy3.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
-        getContentPane().add(lblUgy3, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 72, -1, -1));
-
-        lblUgy4.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
-        getContentPane().add(lblUgy4, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 72, -1, -1));
-
-        lblUgy5.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
-        getContentPane().add(lblUgy5, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 72, -1, -1));
-
-        lblUgy6.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
-        getContentPane().add(lblUgy6, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 72, -1, -1));
-
-        lblUgy7.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
-        getContentPane().add(lblUgy7, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 72, -1, -1));
-
-        lblUgy8.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
-        getContentPane().add(lblUgy8, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 72, -1, -1));
-
-        lblUgy9.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
-        getContentPane().add(lblUgy9, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 72, -1, -1));
-
-        lblUgy10.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\ugyesseg.png")); // NOI18N
-        getContentPane().add(lblUgy10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 72, -1, -1));
-
-        lblUgy11.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
-        getContentPane().add(lblUgy11, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 105, -1, -1));
-
-        lblUgy12.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
-        getContentPane().add(lblUgy12, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 105, -1, -1));
-
-        lblUgy13.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
-        getContentPane().add(lblUgy13, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 105, -1, -1));
-
-        lblUgy14.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
-        getContentPane().add(lblUgy14, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 105, -1, -1));
-
-        lblUgy15.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
-        getContentPane().add(lblUgy15, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 105, -1, -1));
-
-        lblUgy16.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
-        getContentPane().add(lblUgy16, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 105, -1, -1));
-
-        lblUgy17.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
-        getContentPane().add(lblUgy17, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 105, -1, -1));
-
-        lblUgy18.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
-        getContentPane().add(lblUgy18, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 105, -1, -1));
-
-        lblUgy19.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
-        getContentPane().add(lblUgy19, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 105, -1, -1));
-
-        lblUgy20.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\arany.png")); // NOI18N
-        getContentPane().add(lblUgy20, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 105, -1, -1));
+        lblHp1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hp.png"))); // NOI18N
+        getContentPane().add(lblHp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
 
         btnBal.setText("Nyisd ki a dobozt");
         btnBal.addActionListener(new java.awt.event.ActionListener() {
@@ -236,7 +114,7 @@ public class jatek extends javax.swing.JFrame {
                 btnBalActionPerformed(evt);
             }
         });
-        getContentPane().add(btnBal, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 306, -1, -1));
+        getContentPane().add(btnBal, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
 
         btnJobb.setText("Észak felé");
         btnJobb.addActionListener(new java.awt.event.ActionListener() {
@@ -244,11 +122,101 @@ public class jatek extends javax.swing.JFrame {
                 btnJobbActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJobb, new org.netbeans.lib.awtextra.AbsoluteConstraints(199, 306, -1, -1));
+        getContentPane().add(btnJobb, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hatter3.jpg")); // NOI18N
+        lblHp2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hp.png"))); // NOI18N
+        getContentPane().add(lblHp2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
+
+        lblHp3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hp.png"))); // NOI18N
+        getContentPane().add(lblHp3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, -1, -1));
+
+        lblHp4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hp.png"))); // NOI18N
+        getContentPane().add(lblHp4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, -1));
+
+        lblHp5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hp.png"))); // NOI18N
+        getContentPane().add(lblHp5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, -1));
+
+        lblHp6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hp.png"))); // NOI18N
+        getContentPane().add(lblHp6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, -1, -1));
+
+        lblHp7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hp.png"))); // NOI18N
+        getContentPane().add(lblHp7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
+
+        lblHp8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hp.png"))); // NOI18N
+        getContentPane().add(lblHp8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, -1, -1));
+
+        lblLc2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/szerencse.png"))); // NOI18N
+        getContentPane().add(lblLc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, -1, -1));
+
+        lblLc3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/szerencse.png"))); // NOI18N
+        getContentPane().add(lblLc3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, -1));
+
+        lblLc4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/szerencse.png"))); // NOI18N
+        getContentPane().add(lblLc4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, -1, -1));
+
+        lblLc5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/szerencse.png"))); // NOI18N
+        getContentPane().add(lblLc5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, -1, -1));
+
+        lblLc6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/szerencse.png"))); // NOI18N
+        getContentPane().add(lblLc6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, -1, -1));
+
+        lblLc7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/szerencse.png"))); // NOI18N
+        getContentPane().add(lblLc7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, -1, -1));
+
+        lblLc8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/szerencse.png"))); // NOI18N
+        getContentPane().add(lblLc8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));
+
+        lblUgy1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, -1, -1));
+
+        lblUgy2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
+
+        lblUgy3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, -1, -1));
+
+        lblUgy4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
+
+        lblUgy5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, -1, -1));
+
+        lblUgy6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, -1, -1));
+
+        lblUgy7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, -1));
+
+        lblUgy8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        getContentPane().add(lblUgy8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, -1));
+
+        lblArany1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/arany.png"))); // NOI18N
+        getContentPane().add(lblArany1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, -1, -1));
+
+        lblArany2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/arany.png"))); // NOI18N
+        getContentPane().add(lblArany2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, -1, -1));
+
+        lblArany3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/arany.png"))); // NOI18N
+        getContentPane().add(lblArany3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, -1, -1));
+
+        lblArany4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/arany.png"))); // NOI18N
+        getContentPane().add(lblArany4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, -1, -1));
+
+        lblArany5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/arany.png"))); // NOI18N
+        getContentPane().add(lblArany5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, -1, -1));
+
+        lblArany6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/arany.png"))); // NOI18N
+        getContentPane().add(lblArany6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, -1, -1));
+
+        lblArany7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/arany.png"))); // NOI18N
+        getContentPane().add(lblArany7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, -1, -1));
+
+        lblArany8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/arany.png"))); // NOI18N
+        getContentPane().add(lblArany8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hatter3.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 350));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 330));
 
         pack();
         setLocationRelativeTo(null);
@@ -320,9 +288,16 @@ public class jatek extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblArany;
+    private javax.swing.JLabel lblArany1;
+    private javax.swing.JLabel lblArany2;
+    private javax.swing.JLabel lblArany3;
+    private javax.swing.JLabel lblArany4;
+    private javax.swing.JLabel lblArany5;
+    private javax.swing.JLabel lblArany6;
+    private javax.swing.JLabel lblArany7;
+    private javax.swing.JLabel lblArany8;
     private javax.swing.JLabel lblEletero;
     private javax.swing.JLabel lblHp1;
-    private javax.swing.JLabel lblHp10;
     private javax.swing.JLabel lblHp2;
     private javax.swing.JLabel lblHp3;
     private javax.swing.JLabel lblHp4;
@@ -330,9 +305,7 @@ public class jatek extends javax.swing.JFrame {
     private javax.swing.JLabel lblHp6;
     private javax.swing.JLabel lblHp7;
     private javax.swing.JLabel lblHp8;
-    private javax.swing.JLabel lblHp9;
     private javax.swing.JLabel lblLc1;
-    private javax.swing.JLabel lblLc10;
     private javax.swing.JLabel lblLc2;
     private javax.swing.JLabel lblLc3;
     private javax.swing.JLabel lblLc4;
@@ -340,28 +313,15 @@ public class jatek extends javax.swing.JFrame {
     private javax.swing.JLabel lblLc6;
     private javax.swing.JLabel lblLc7;
     private javax.swing.JLabel lblLc8;
-    private javax.swing.JLabel lblLc9;
     private javax.swing.JLabel lblSzerencse;
     private javax.swing.JLabel lblUgy1;
-    private javax.swing.JLabel lblUgy10;
-    private javax.swing.JLabel lblUgy11;
-    private javax.swing.JLabel lblUgy12;
-    private javax.swing.JLabel lblUgy13;
-    private javax.swing.JLabel lblUgy14;
-    private javax.swing.JLabel lblUgy15;
-    private javax.swing.JLabel lblUgy16;
-    private javax.swing.JLabel lblUgy17;
-    private javax.swing.JLabel lblUgy18;
-    private javax.swing.JLabel lblUgy19;
     private javax.swing.JLabel lblUgy2;
-    private javax.swing.JLabel lblUgy20;
     private javax.swing.JLabel lblUgy3;
     private javax.swing.JLabel lblUgy4;
     private javax.swing.JLabel lblUgy5;
     private javax.swing.JLabel lblUgy6;
     private javax.swing.JLabel lblUgy7;
     private javax.swing.JLabel lblUgy8;
-    private javax.swing.JLabel lblUgy9;
     private javax.swing.JLabel lblUgyesseg;
     private javax.swing.JTextArea txfSz;
     // End of variables declaration//GEN-END:variables

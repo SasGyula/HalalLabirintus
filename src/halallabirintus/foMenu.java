@@ -47,7 +47,7 @@ public class foMenu extends javax.swing.JFrame {
 
         jLabel23.setFont(new java.awt.Font("Papyrus", 1, 36)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("Halálabirintus");
+        jLabel23.setText("Halállabirintus");
         getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 17, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(153, 153, 0));
@@ -68,8 +68,7 @@ public class foMenu extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 115, 143, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\SasGyula(SZOFT_2023_\\Documents\\NetBeansProjects\\Halallabirintus\\kepek\\hatter.jpg")); // NOI18N
-        jLabel2.setText("jLabel2");
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hatter.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 150));
 
         pack();
