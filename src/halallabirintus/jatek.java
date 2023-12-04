@@ -80,7 +80,7 @@ public class jatek extends javax.swing.JFrame {
         txfSz.setWrapStyleWord(true);
         jScrollPane1.setViewportView(txfSz);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 138, 273, 150));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 138, 270, 150));
 
         lblEletero.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblEletero.setForeground(new java.awt.Color(255, 255, 255));
@@ -122,7 +122,7 @@ public class jatek extends javax.swing.JFrame {
                 btnJobbActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJobb, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, -1, -1));
+        getContentPane().add(btnJobb, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, -1, -1));
 
         lblHp2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hp.png"))); // NOI18N
         getContentPane().add(lblHp2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, -1));
@@ -166,28 +166,28 @@ public class jatek extends javax.swing.JFrame {
         lblLc8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/szerencse.png"))); // NOI18N
         getContentPane().add(lblLc8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));
 
-        lblUgy1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        lblUgy1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/ugyesseg1.png"))); // NOI18N
         getContentPane().add(lblUgy1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, -1, -1));
 
-        lblUgy2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        lblUgy2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/ugyesseg1.png"))); // NOI18N
         getContentPane().add(lblUgy2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
 
-        lblUgy3.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        lblUgy3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/ugyesseg1.png"))); // NOI18N
         getContentPane().add(lblUgy3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, -1, -1));
 
-        lblUgy4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        lblUgy4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/ugyesseg1.png"))); // NOI18N
         getContentPane().add(lblUgy4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
 
-        lblUgy5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        lblUgy5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/ugyesseg1.png"))); // NOI18N
         getContentPane().add(lblUgy5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, -1, -1));
 
-        lblUgy6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        lblUgy6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/ugyesseg1.png"))); // NOI18N
         getContentPane().add(lblUgy6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, -1, -1));
 
-        lblUgy7.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        lblUgy7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/ugyesseg1.png"))); // NOI18N
         getContentPane().add(lblUgy7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, -1));
 
-        lblUgy8.setIcon(new javax.swing.ImageIcon("C:\\Users\\ADMIN\\OneDrive - SZÁMALK-Szalézi Technikum és Szakgimnázium\\Dokumentumok\\Java\\halallab\\HalalLabirintus\\kepek\\ugyesseg.png")); // NOI18N
+        lblUgy8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/ugyesseg1.png"))); // NOI18N
         getContentPane().add(lblUgy8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, -1));
 
         lblArany1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/arany.png"))); // NOI18N
@@ -223,27 +223,82 @@ public class jatek extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnJobbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJobbActionPerformed
-        
+        kettevag();
+        nyugatFele();
+        nyugat();
         eszakFele();
     }//GEN-LAST:event_btnJobbActionPerformed
 
     private void btnBalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBalActionPerformed
+        maszas();
+        eszakFeleHarc();
+        keletFele();
         nyisdKiADobozt();
+        kelet(); 
     }//GEN-LAST:event_btnBalActionPerformed
-
+    private void kettevag() {
+        if (btnJobb.getText() == "Kettévág"){
+            txfSz.setText("Kardod könnyedén áthatol a spóragolyó vékonykülső burkán. Sűrű barna spórafelhő csap ki a golyóból, és körülvesz. Némelyik spóra a bőrödhöz tapad, és rettenetes viszketést okoz. Nagy daganatok nőnek az arcodon és karodon, és a bőröd mintha égne. 2 ÉLETERŐ pontot veszítesz. Vadul vakarózva átléped a leeresztett golyót, és keletnek veszed az utad.");
+            lblHp1.setVisible(false);
+            lblHp2.setVisible(false);
+            btnBal.setText("Kelet felé");
+            btnJobb.setVisible(false);
+        }
+    }
+    private void maszas() {
+        if (btnBal.getText() == "Mászás"){
+            txfSz.setText("Fölmászol a lágy sziklára, attól tartasz, hogy bár-melyik pillanatban elnyelhet. Nehéz átvergődni rajta, mert puha anyagában alig tudod a lábadat emelni, de végül átvergődsz rajta. Megkönnyebbülten érsz újra szilárd talajra, és fordulsz kelet felé.");
+             btnBal.setText("Kelet felé");
+             btnJobb.setVisible(false);
+        }
+    }
+    private void eszakFeleHarc() {
+        if (btnBal.getText() == "Észak felé"){
+            txfSz.setText("Hallod, hogy elölről súlyos lépések közelednek. Egy széles, állatbőrökbe öltözött, kőbaltás, primitívlény lép elő. Ahogy meglát, morog, a földre köp, majd a kőbaltát felemelve közeledik, és mindennek kinéz, csak barátságosnak nem. Előhúzod kardodat, és felkészülsz, hogy megküzdj a Barlangi Emberrel.");
+            btnBal.setVisible(false);
+            btnJobb.setText("Harc");
+        }
+    }
+    private void keletFele() {
+        if (btnBal.getText() == "Kelet felé") {
+            txfSz.setText("A három pár nedves lábnyomot követve az alagútnyugati elágazásában hamarosan egy újabb el-ágazáshoz érsz. Ha továbbmész nyugat felé a lábnyomokat követve, kattints a 'Nyugat felé' gombra. Ha inkább észak felé mész a harmadik pár lábnyom után, kattints a 'Észak felé' gombra.");
+            btnJobb.setText("Nyugat felé");
+            btnBal.setText("Észak felé");
+            btnJobb.setVisible(true);
+        }
+    }
+    private void kelet() {
+        if (btnBal.getText() == "Kelet") {
+            txfSz.setText("Látod, hogy az akadály egy széles, barna, sziklaszerű tárgy. Megérinted, és meglepve tapasztalod, hogy lágy, szivacsszerű. Ha át szeretnél mászni rajta, kattints a 'Mászás' gombra. Ha ketté akarod vágni a kardoddal, kattints a 'Kettévág' gombra");
+            btnBal.setText("Mászás");
+            btnJobb.setText("Kettévág");
+        }
+    }
     private void nyisdKiADobozt() {
         if (btnBal.getText() == "Nyisd ki a dobozt") {
             txfSz.setText("A doboz teteje könnyedén nyílik. Benne két aranypénzt találsz, és egy üzenetet, amely egy kis pergamenen neked szól. Előbb zsebre vágod az aranyakat, aztán elolvasod az üzenetet: - „Jól tetted. Legalább volt annyi eszed, hogy megállj és elfogadd az ajándékot. Most azt tanácsolom neked, hogy keress és használj különféle tárgyakat, ha sikerrel akarsz áthaladni Halállabirintusomon.” Azaláírás Szukumvit. Megjegyzed a tanácsot, apró darabokra téped a pergament, és tovább mész észak felé.");
-            btnBal.setText("Észak felé");
-            btnJobb.setText("");
+            btnBal.setVisible(false);
+            btnJobb.setText("Észak felé");
         }
     }
-
+    private void nyugat() {
+        if (btnJobb.getText() == "Nyugat"){
+            txfSz.setText("A három pár nedves lábnyomot követve az alagútnyugati elágazásában hamarosan egy újabb el-ágazáshoz érsz. Ha továbbmész nyugat felé a lábnyomokat követve, kattints a 'Nyugat felé' gombra. Ha inkább észak felé mész a harmadik pár lábnyom után, kattints a 'Észak felé' gombra.");
+            btnJobb.setText("Nyugat felé");
+            btnBal.setText("Észak felé");
+        }
+    }
     private void eszakFele() {
         if (btnJobb.getText() == "Észak felé"){
-            txfSz.setText("Néhány perc gyaloglás után egy elágazáshoz érsz az alagútban. Egy, a falra festett fehér nyíl nyugatfelé mutat. A földön nedves lábnyomok jelzik, merre haladtak az előtted járók. Nehéz biztosan megmondani, de úgy tűnik, hogy három közülük a nyíl irányába halad, míg egyikük úgy döntött, hogy keletnek megy. Ha nyugat felé kívánsz menni, lapozz a 293-ra. Ha keletnek, lapozz a 56-re.");
+            txfSz.setText("Néhány perc gyaloglás után egy elágazáshoz érsz az alagútban. Egy, a falra festett fehér nyíl nyugatfelé mutat. A földön nedves lábnyomok jelzik, merre haladtak az előtted járók. Nehéz biztosan megmondani, de úgy tűnik, hogy három közülük a nyíl irányába halad, míg egyikük úgy döntött, hogy keletnek megy. Ha nyugat felé kívánsz menni, kattints a 'Nyugat' gombra. Ha keletnek, kattints a 'Kelet' gombra.");
             btnJobb.setText("Nyugat");
             btnBal.setText("Kelet");
+            btnBal.setVisible(true);
+        }
+    }
+    private void nyugatFele() {
+        if (btnJobb.getText() == "Nyugat felé"){
+            txfSz.setText("Ahogy végigmész az alagúton, csodálkozva látod, hogy egy jókora vasharang csüng alá a boltozatról.");
         }
     }
 
