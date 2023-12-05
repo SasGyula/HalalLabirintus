@@ -10,12 +10,12 @@ import javax.swing.JFrame;
  *
  * @author SasGyula(SZOFT_2023_
  */
-public class jatek extends javax.swing.JFrame {
+public class jatek2 extends javax.swing.JFrame {
 
     /**
      * Creates new form jatek
      */
-    public jatek() {
+    public jatek2() {
         initComponents();
         lblArany1.setVisible(false);
         lblArany2.setVisible(false);
@@ -25,9 +25,9 @@ public class jatek extends javax.swing.JFrame {
         lblArany6.setVisible(false);
         lblArany7.setVisible(false);
         lblArany8.setVisible(false);
-        lblHp1.setVisible(false);
-        lblHp2.setVisible(false);
-        lblHp3.setVisible(false);
+        lblUgy8.setVisible(false);
+        lblUgy7.setVisible(false);
+        lblUgy6.setVisible(false);
         
         txfSz.setText("Miután öt percet haladtál lassan az alagútban, egy kőasztalhoz érsz, amely a bal oldali fal mellett áll. Hat doboz van rajta, egyikükre a te neved festették. Ha kiakarod nyitni a dobozt, kattints a 'Nyisd ki a doboz' gombra. Ha inkább tovább haladsz észak felé, kattints az 'Észak felé' gombra!");
     }
@@ -254,8 +254,8 @@ public class jatek extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBalActionPerformed
     private void harc() {
         if (btnJobb.getText() == "Harc") {
-            JFrame harc = new harc();
-            harc.show();
+            JFrame harc2 = new harc2();
+            harc2.show();
             
             dispose();
         }
@@ -263,8 +263,8 @@ public class jatek extends javax.swing.JFrame {
     private void kettevag() {
         if (btnJobb.getText() == "Kettévág"){
             txfSz.setText("Kardod könnyedén áthatol a spóragolyó vékonykülső burkán. Sűrű barna spórafelhő csap ki a golyóból, és körülvesz. Némelyik spóra a bőrödhöz tapad, és rettenetes viszketést okoz. Nagy daganatok nőnek az arcodon és karodon, és a bőröd mintha égne. 2 ÉLETERŐ pontot veszítesz. Vadul vakarózva átléped a leeresztett golyót, és keletnek veszed az utad.");
-            lblHp4.setVisible(false);
-            lblHp5.setVisible(false);
+            lblHp1.setVisible(false);
+            lblHp2.setVisible(false);
             btnBal.setText("Kelet felé");
             btnJobb.setVisible(false);
         }
@@ -345,20 +345,21 @@ public class jatek extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(jatek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jatek2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(jatek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jatek2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(jatek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jatek2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(jatek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(jatek2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new jatek().setVisible(true);
+                new jatek2().setVisible(true);
             }
         });
     }

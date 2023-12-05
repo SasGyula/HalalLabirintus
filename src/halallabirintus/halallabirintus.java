@@ -29,11 +29,11 @@ public class halallabirintus extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        lblSura = new javax.swing.JLabel();
+        lblWari = new javax.swing.JLabel();
+        btnSura = new javax.swing.JButton();
+        btnWari = new javax.swing.JButton();
+        lblHatter = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -44,30 +44,30 @@ public class halallabirintus extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/sura.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 19, 230, -1));
+        lblSura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/sura.png"))); // NOI18N
+        getContentPane().add(lblSura, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 19, 230, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/wari.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 19, 230, -1));
+        lblWari.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/wari.png"))); // NOI18N
+        getContentPane().add(lblWari, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 19, 230, -1));
 
-        jButton1.setText("Sura");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnSura.setText("Sura");
+        btnSura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnSuraActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, -1, -1));
+        getContentPane().add(btnSura, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, -1, -1));
 
-        jButton2.setText("Harcos");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnWari.setText("Harcos");
+        btnWari.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnWariActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, -1, -1));
+        getContentPane().add(btnWari, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hatter2.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 420));
+        lblHatter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/halallabirintus/hatter2.jpg"))); // NOI18N
+        getContentPane().add(lblHatter, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 420));
 
         pack();
         setLocationRelativeTo(null);
@@ -77,19 +77,19 @@ public class halallabirintus extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(rootPane, "Egy versenyre nevezel, aminek a lényege,\n hogy át kell kelni a halállabirintuson.\n A labirintusban tárgyakat találhatsz és \n szörnyekkel kell harcoljál. \n Válassz karaktert!");
     }//GEN-LAST:event_formWindowOpened
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnSuraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuraActionPerformed
     JFrame jatek = new jatek();
     jatek.show();
     
     dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnSuraActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    JFrame jatek = new jatek();
-    jatek.show();
+    private void btnWariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWariActionPerformed
+    JFrame jatek2 = new jatek2();
+    jatek2.show();
     
     dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnWariActionPerformed
 
     /**
      * @param args the command line arguments
@@ -128,10 +128,10 @@ public class halallabirintus extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton btnSura;
+    private javax.swing.JButton btnWari;
+    private javax.swing.JLabel lblHatter;
+    private javax.swing.JLabel lblSura;
+    private javax.swing.JLabel lblWari;
     // End of variables declaration//GEN-END:variables
 }
